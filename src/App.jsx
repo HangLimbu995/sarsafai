@@ -2,8 +2,13 @@ import React, { useEffect } from 'react'
 import Home from './pages/Home'
 import LocomotiveScroll from 'locomotive-scroll';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer'
+import LogRocket from 'logrocket';
 
 const App = () => {
+
+  LogRocket.init('kdqtij/sarsafai')
+
   useEffect(() => {
     const scroll = new LocomotiveScroll({
       el: document.querySelector('[data-scroll-container]'),
@@ -11,15 +16,15 @@ const App = () => {
     });
 
     return () => {
-      scroll.destroy();
+      if(scroll) scroll.destroy();
     };
-  },[])
-  
+  }, [])
+
   return (
-    <div data-scroll-container className='relative' id='main'>
-    <Navbar />
-    <div className='w-full h-[100vh]'></div>
-    <Home />
+   <div data-scroll-container className='relative w-full h-full'  >
+ <Navbar />
+ <Home />
+ <Footer />
     </div>
   )
 }

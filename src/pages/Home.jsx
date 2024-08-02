@@ -28,8 +28,8 @@ const Home = () => {
   }, []);
 
   return (
-    <div className='w-full'>
-   
+    <div className='w-full min-h-[100vh] bg-green-600'>
+   hello
     </div>
   );
 };
