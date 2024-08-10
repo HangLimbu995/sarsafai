@@ -1,10 +1,4 @@
 
-.header {
-  background-image: url('@/assets/bg-header');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
 
 .big-logo {
   color: transparent;
