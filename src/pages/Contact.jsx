@@ -19,7 +19,7 @@ const Contact = () => {
           </form>
         </div>
         <div className='relative w-full h-full grid place-items-center'>
-          <div className='relatvie grid gap-5 '>
+          <div className='relatvie grid gap-5 p-5 -ml-5' style={{borderLeft: '1px solid #A8A8A8'}}>
             <h3 className='leading-9 text-4xl font-bold'>Let's talk about <br /> everything.</h3>
             <p>We are always here to assist you. Whether you have questions about our products, need help with an order, or want to know more about our sustainable practices, we are just a call away. Reach out to us through the contact form or give us a call directly.</p>
             <Link to='/about-us' >   <button className='absolute bottom-[15vh] text-blue-700'>Read More &rarr;</button></Link>
