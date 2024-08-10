@@ -7,7 +7,7 @@ const ServiceHoverNav = () => {
     const serviceData = Services[0]
 
     return (
-        <div className='service-dropdown w-full max-h-[70vh] absolute top-[50px] left-0 flex justify-center p-4 bg-white'>
+        <div className='service-dropdown w-full max-h-[70vh] absolute top-[50px] left-0 flex justify-center p-4 bg-white' style={{zIndex:9}}>
             <div className='w-[80%] py-4 px-6  flex justify-between gap-4 '>
                 <div className='w-full '>
                     <div className='text-[20px] m-2 font-[700] capitalize'>
